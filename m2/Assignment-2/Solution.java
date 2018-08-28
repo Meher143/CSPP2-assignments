@@ -31,8 +31,9 @@ final class Solution {
     public static void rootsOfQuadraticEquation(final int a, final int b, final int c){
         double r1;
         double r2;
-        r1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
-        r2 = (-b - Math.sqrt(b * b - 4 * a * c))/(2 * a);
+        final int k = 4;
+        r1 = (-b + Math.sqrt(b * b - k * a * c)) / (2 * a);
+        r2 = (-b - Math.sqrt(b * b - k * a * c))/(2 * a);
         System.out.println(r1 + " " + r2);
     }
 }
