@@ -7,8 +7,7 @@ final class Solution {
     **/
     private Solution() { }
     /**
-     * { function_description }
-     *
+     * { function_description }.
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
@@ -22,10 +21,13 @@ final class Solution {
     Need to write the rootsOfQuadraticEquation function and print the output.
     */
     /**
-    * @parem a comment
-    * @parem b comment
-    * @parem c comment
-    **/
+        /**
+    * { function_description }.
+    * @param      a  The arguments
+    * @param      b  The arguments
+    * @param      c  The arguments
+    * 
+     */
     public static void rootsOfQuadraticEquation(final int a, final int b, final int c){
         double r1;
         double r2;
