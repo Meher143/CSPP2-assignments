@@ -26,14 +26,14 @@ final class Solution {
     * @param      a  The arguments
     * @param      b  The arguments
     * @param      c  The arguments
-    * 
-     */
-    public static void rootsOfQuadraticEquation(final int a, final int b, final int c){
+    */
+    public static void rootsOfQuadraticEquation(final int a,
+     final int b, final int c) {
         double r1;
         double r2;
         final int k = 4;
         r1 = (-b + Math.sqrt(b * b - k * a * c)) / (2 * a);
-        r2 = (-b - Math.sqrt(b * b - k * a * c))/(2 * a);
+        r2 = (-b - Math.sqrt(b * b - k * a * c)) / (2 * a);
         System.out.println(r1 + " " + r2);
     }
 }
