@@ -3,7 +3,7 @@ import java.util.Scanner;
 /*
     Do not modify this main function.
     */
-public class Solution {
+final class Solution {
     /**
      * Constructs the object.
      */
@@ -15,7 +15,7 @@ public class Solution {
      * @param      args  The arguments
      */
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         Scanner s = new Scanner(System.in);      
         int n1 = s.nextInt();
@@ -26,8 +26,10 @@ public class Solution {
     /*
     Need to write the gcd function and print the output.
     */
-    public static int gcd(int n1, int n2) {
-
+    public static int gcd(final int n1, final int n2) {
+        /**
+         * { item_description }
+         */
         for(int i = Math.min(n1, n2); i >= 1; i--) {
             if (n1 % i == 0 && n2 % i == 0) {
                 return i;
