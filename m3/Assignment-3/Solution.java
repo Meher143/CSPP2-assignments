@@ -1,9 +1,19 @@
 
 import java.util.Scanner;
 /*
-	Do not modify this main function.
-	*/
+    Do not modify this main function.
+    */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
+    /**
+     * { function_description }.
+     *
+     * @param      args  The arguments
+     */
 
     public static void main(String[] args) {
 
@@ -14,8 +24,8 @@ public class Solution {
     }
 
     /*
-	Need to write the gcd function and print the output.
-	*/
+    Need to write the gcd function and print the output.
+    */
     public static int gcd(int n1, int n2) {
 
         for(int i = Math.min(n1, n2); i >= 1; i--) {
