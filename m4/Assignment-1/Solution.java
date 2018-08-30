@@ -9,8 +9,6 @@ public class Solution
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int max ;
-		
-		n = sc.nextInt();
         int a[] = new int[n];
      
         for(int i = 0; i < n; i++)
