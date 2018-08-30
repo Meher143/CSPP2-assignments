@@ -14,14 +14,14 @@ public final class Solution {
  *
  * @param      args  The arguments
  */
-    /* Fill the main function to print resultant of addition of matrices*/
+    /* To print the addition of two matrices*/
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
         int n = sc.nextInt();
         int a[][] = new int[m][n];
-        for (int i = 0; i<m; i++) {
-            for (int j = 0; j<n;j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n;j++) {
                 a[i][j] = sc.nextInt();
             }
         }
