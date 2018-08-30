@@ -27,15 +27,15 @@ public final class Solution {
         }
         int x = sc.nextInt();
         int y = sc.nextInt();
-        int b[][] = new int[x][y];
+        int[][] b = new int[x][y];
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
                 b[i][j] = sc.nextInt();
             }
         }
         if (m == x && n == y) {
-            int [][] c = new int[m][n];
-            for(int i = 0; i < m; i++) {
+            int[][] c = new int[m][n];
+            for (int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     c[i][j] = a[i][j] + b[i][j];
                 }
