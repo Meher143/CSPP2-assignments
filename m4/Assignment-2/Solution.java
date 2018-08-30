@@ -1,5 +1,19 @@
-import java.util.*;
-public class Solution {
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+    /**
+    * Fill the main function to print the addition of two matrices.
+ *
+ * @param      args  The arguments
+ */
 	/* Fill the main function to print resultant of addition of matrices*/
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
