@@ -19,22 +19,24 @@ public class Solution {
 				b[i][j] = sc.nextInt();
 			}
 		}
-		int c[][] = new int[m][n];
-		for(int i = 0; i < m;i++){
-			for (int j = 0;j < n;j++){
-				c[i][j] = a[i][j] + b[i][j];
-
-			}
-		}
-		for (int i = 0; i < m;i++){
-			for (int j = 0;j < n;j++){
-				System.out.print(c[i][j]);
-				if (j != m - 1) {
-					System.out.println(" ");
+		if ( m == x && n == y) {
+			int c[][] = new int[m][n];
+			for(int i = 0; i < m;i++){
+				for (int j = 0;j < n;j++){
+					c[i][j] = a[i][j] + b[i][j];
 				}
 			}
-			System.out.println();
-		}
-				
+			for (int i = 0; i < m;i++){
+				for (int j = 0;j < n;j++){
+					System.out.print(c[i][j]);
+					if (j != m - 1) {
+						System.out.print(" ");
+					}
+				}
+				System.out.println();
+			}
+		} else {
+			System.out.println("not possible");
+		}			
 	}
 }
