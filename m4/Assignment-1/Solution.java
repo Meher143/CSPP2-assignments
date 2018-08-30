@@ -25,7 +25,7 @@ public class Solution
                 max = a[j];
             }
         }
-        System.out.println("Maximum value:"+max);
+        System.out.println(max);
     }
 		
 
