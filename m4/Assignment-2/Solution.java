@@ -32,8 +32,6 @@ public class Solution {
 				if (j != m -1) {
 					System.out.println(" ");
 				}
-
-
 			}
 			System.out.println();
 		}
