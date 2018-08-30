@@ -19,13 +19,13 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int max;
-        int a[] = new int[n];
-      for(int i = 0; i < n; i++) {
+        int[] a = new int[n];
+      for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
         max = a[0];
-        for(int j = 0; j < n; j++) {
-            if(max < a[j]) {
+        for (int j = 0; j < n; j++) {
+            if (max < a[j]) {
                 max = a[j];
             }
         }
