@@ -14,7 +14,6 @@ public final class Solution {
  *
  * @param      args  The arguments
  */
-    /* To print the addition of two matrices*/
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
@@ -51,6 +50,6 @@ public final class Solution {
             }
         } else {
             System.out.println("not possible");
-        }           
+        }
     }
 }
