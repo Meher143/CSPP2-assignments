@@ -1,9 +1,20 @@
 
-import java.util.*;
-public class Solution
-{/*
-	Fill this main function to print maximum of given array
-	*/
+import java.util.Scanner;
+/**
+ * Class for solution.
+ */
+public class Solution {
+ /**
+     * Constructs the object.
+     */
+    private Solution() {
+
+    }
+/**
+	* Fill the main function to print the maximum of the array.
+ *
+ * @param      args  The arguments
+ */
 	public static void main(String[] args)
 	{
 		Scanner sc = new Scanner(System.in);
@@ -28,4 +39,4 @@ public class Solution
 		
 
 	}
-
+	
