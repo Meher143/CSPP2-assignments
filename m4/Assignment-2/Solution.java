@@ -19,7 +19,7 @@ public final class Solution {
         Scanner sc = new Scanner(System.in);
         int m = sc.nextInt();
         int n = sc.nextInt();
-        int a[][] = new int[m][n];
+        int[][] a = new int[m][n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 a[i][j] = sc.nextInt();
@@ -34,7 +34,7 @@ public final class Solution {
             }
         }
         if ( m == x && n == y) {
-            int c[][] = new int[m][n];
+            int [][] c = new int[m][n];
             for(int i = 0; i < m; i++) {
                 for (int j = 0; j < n; j++) {
                     c[i][j] = a[i][j] + b[i][j];
