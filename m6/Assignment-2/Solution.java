@@ -27,15 +27,15 @@ final class Solution {
     // write ypur code here
         for(int i = 0; i < rows; i++) {
             for(int j = 0; j < columns; j++) {
-                float d = 100;
-                int e = 100;
+                final float d = 100;
+                final int e = 100;
                 float b = a[i][j]/d;
                 int c = Math.round(b);
                 c = c * e;
                 a[i][j] = c;
             }
 
-        }return a;
+        } return a;
     
     }
     /**
