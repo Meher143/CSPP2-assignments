@@ -26,13 +26,15 @@ public final class Solution {
                 if (num % j == 0) {
                     count = count + 1;
                 }
-                if (count != 2){
+                if (count != 2) {
+                    System.out.println("not prime");
 
                 }
             }
         }
         for (int i = 1; i < n; i++) {
-        if (n % i!= 0) {
+        if (n % i != 0) {
+            System.out.println("not odd");
          }
     }
     System.out.println(n);
