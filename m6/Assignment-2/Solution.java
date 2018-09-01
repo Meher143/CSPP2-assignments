@@ -29,7 +29,7 @@ final class Solution {
             for (int j = 0; j < columns; j++) {
                 final float d = 100;
                 final int e = 100;
-                float b = a[i][j]/d;
+                float b = a[i][j] / d;
                 int c = Math.round(b);
                 c = c * e;
                 a[i][j] = c;
