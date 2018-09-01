@@ -36,7 +36,6 @@ final class Solution {
             }
 
         } return a;
-    
     }
     /**
      * Main function.
