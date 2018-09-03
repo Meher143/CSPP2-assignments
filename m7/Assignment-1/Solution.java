@@ -12,7 +12,7 @@ class InputValidator {
     private String data;
     private int length;
 
-    InputValidator(String name) {
+    InputValidator(final String name) {
         data = name;
         length = data.length();
     }
@@ -26,7 +26,7 @@ class InputValidator {
 /**
  * Class for solution.
  */
-public class Solution {
+final class Solution {
     /**
      * main function to perform validation.
      */
@@ -36,7 +36,7 @@ public class Solution {
     /**
      * @param args array of strings.
      */
-    public static void main(String args[]) {
+    public static void main(final String args[]) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
