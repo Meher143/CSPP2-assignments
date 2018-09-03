@@ -10,7 +10,7 @@ class InputValidator
 		length = data.length();
 	}
 	boolean validateData() {
-		if(length>=6) {
+		if (length >= 6) {
 			return true;
 		}
 		return false;
@@ -20,9 +20,9 @@ public class Solution
 {
 	public static void main(String args[])
     {
-    	Scanner s=new Scanner(System.in);
-    	String input=s.next();
-    	InputValidator i=new InputValidator(input);    	
+    	Scanner s = new Scanner(System.in);
+    	String input = s.next();
+    	InputValidator i = new InputValidator(input);    	
     	System.out.println(i.validateData());
 
     }
