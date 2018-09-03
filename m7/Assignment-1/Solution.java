@@ -22,7 +22,7 @@ class InputValidator {
         length = data.length();
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
