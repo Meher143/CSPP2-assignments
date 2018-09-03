@@ -11,13 +11,24 @@ class InputValidator {
      */
     private String data;
     private int length;
+    /**
+     * Constructs the object.
+     *
+     * @param      name  The name
+     */
 
     InputValidator(final String name) {
         data = name;
         length = data.length();
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     boolean validateData() {
-        if (length >= 6) {
+        final int i = 6;
+        if (length >= i) {
             return true;
         }
         return false;
