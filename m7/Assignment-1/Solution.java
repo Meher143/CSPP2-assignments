@@ -1,30 +1,49 @@
-import java.util.*;
+/**
+ * imports scanner.
+ */
+import java.util.Scanner;
+/**
+ * Class for input validator.
+ */
 class InputValidator
 {
-	/*Write the atrributes and methods for InputValidator*/
-	private String data;
-	private int length;
+    /**
+     * { attributes and methods are given }.
+     */
+    private String data;
+    private int length;
 
-	InputValidator(String name) {
-		data = name;
-		length = data.length();
-	}
-	boolean validateData() {
-		if (length >= 6) {
-			return true;
-		}
-		return false;
-	}
+    InputValidator(String name) {
+        data = name;
+        length = data.length();
+    }
+    boolean validateData() {
+        if (length >= 6) {
+            return true;
+        }
+        return false;
+    }
 }
+/**
+ * Class for solution.
+ */
 public class Solution
 {
-	public static void main(String args[])
-    {
-    	Scanner s = new Scanner(System.in);
-    	String input = s.next();
-    	InputValidator i = new InputValidator(input);
-    	System.out.println(i.validateData());
+    /**
+     * main function to perform validation.
+     */
+    private Solution() {
 
     }
+    /**
+     * @param args array of strings.
+     */
+    public static void main(String args[])
+    {
+        Scanner s = new Scanner(System.in);
+        String input = s.next();
+        InputValidator i = new InputValidator(input);
+        System.out.println(i.validateData());
 
+    }
 }
