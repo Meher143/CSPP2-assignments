@@ -5,8 +5,7 @@ import java.util.Scanner;
 /**
  * Class for input validator.
  */
-class InputValidator
-{
+class InputValidator {
     /**
      * { attributes and methods are given }.
      */
@@ -27,8 +26,7 @@ class InputValidator
 /**
  * Class for solution.
  */
-public class Solution
-{
+public class Solution {
     /**
      * main function to perform validation.
      */
@@ -38,8 +36,7 @@ public class Solution
     /**
      * @param args array of strings.
      */
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
         InputValidator i = new InputValidator(input);
