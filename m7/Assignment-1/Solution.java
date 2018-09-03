@@ -10,6 +10,9 @@ class InputValidator {
      * { attributes and methods are given }.
      */
     private String data;
+    /**
+     * { length is integer }.
+     */
     private int length;
     /**
      * Constructs the object.
@@ -55,3 +58,4 @@ final class Solution {
 
     }
 }
+
