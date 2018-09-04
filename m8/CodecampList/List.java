@@ -38,6 +38,7 @@ final class List {
     // declare a private int[]
     // don't create the array yet using new
     // that's the job of the List constructor
+    
     private int[] list;
     private int size;
     /**
@@ -88,7 +89,7 @@ final class List {
         // An empty list has how many items?
         // That is the initial value to use for size.
         final int ten = 10;
-        list = new int[10];
+        list = new int[ten];
         size = 0;
 
     }
