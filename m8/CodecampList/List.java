@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 
 final class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /**
      * The goal for the list is to store items.
@@ -40,6 +40,9 @@ final class List {
     // that's the job of the List constructor
     private int[] list;
     private int size;
+    /**
+     * { item_description }.
+     */
 
     /**
      * What are the other class variables needed for creating a list?
@@ -84,6 +87,7 @@ final class List {
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
         // That is the initial value to use for size.
+        final int ten = 10;
         list = new int[10];
         size = 0;
 
@@ -156,18 +160,18 @@ final class List {
      * @param      index  The index
      */
     public void remove(final int index) {
-    	if (index >= 0 && index < size) {
-    		for (int i = index; i < size - 1; i++) {
-        	list[i] = list[i + 1];
+        if (index >= 0 && index < size) {
+            for (int i = index; i < size - 1; i++) {
+            list[i] = list[i + 1];
             }
            list[size] = 0;
            size--;
 
-    	
+        
         // write the logic for remove here.
         // Think about what to do to the size variable.
        } else {
-       	System.out.println("Invalid position exception");
+        System.out.println("Invalid position exception");
        }
 }
 
@@ -192,8 +196,8 @@ final class List {
     public int get(final int index) {
         // Replace the code below to write the code for get
         if (index >= 0 && index < size) {
-    		return list[index];
-    	}
+            return list[index];
+        }
         return -1;
     }
 
@@ -228,7 +232,7 @@ final class List {
         String res = "[";
         String c = ",";
         for (int i = 0; i < size - 1; i++) {
-        	res += list[i] + c;
+            res += list[i] + c;
 
         }
         res += list[size - 1] + "]";
@@ -250,7 +254,7 @@ final class List {
     public boolean contains(final int item) {
         // Replace the code below
         if (indexOf(item) >= 0) {
-        	return true;
+            return true;
         }
         return false;
     }
@@ -273,7 +277,7 @@ final class List {
         for (int i:list) { 
          index++;
          if (i == item) {
-         	return index;
+            return index;
          }
         }
         return -1;
@@ -284,7 +288,7 @@ final class List {
      * @param      args  The arguments
      */
 
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -329,5 +333,5 @@ final class List {
                 break;
             }
         }
-	}
+    }
 }
