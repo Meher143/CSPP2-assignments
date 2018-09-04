@@ -192,8 +192,6 @@ final class List {
      * { function_description }.
      *
      * @param      index  The index
-     *
-     * @return     { description_of_the_return_value }
      */
     public void get(final int index) {
         // Replace the code below to write the code for get
