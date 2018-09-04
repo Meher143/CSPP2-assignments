@@ -1,5 +1,14 @@
+/**
+ * { To import BufferedInputStream }.
+ */
 import java.io.BufferedInputStream;
+/**
+ * { To import Scanner }.
+ */
 import java.util.Scanner;
+/**
+ * Class name list is created.
+ */
 
 public class List {
 	//Implement all the methods mentioned to build a ListADT
