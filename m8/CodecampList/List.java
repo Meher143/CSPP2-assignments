@@ -129,8 +129,8 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-    	if(index>=0 &&index<size) {
-    		for(int i = 0; i<size-1;i++) {
+    	if(index >= 0 && index < size) {
+    		for(int i = index; i < size - 1; i++) {
         	list[i] = list[i+1];
             }
            list[size] = 0;
