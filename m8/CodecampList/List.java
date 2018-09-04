@@ -72,7 +72,7 @@ final class List {
     /**
      * Constructs the object.
      */
-    public List() {
+    List() {
 
         // what are the two variables to be initialized here?
         // think about the private variables described above.
@@ -88,7 +88,7 @@ final class List {
         size = 0;
 
     }
-    
+
     /*
      * The add method does what the name suggests.
      * Add an int item to the list.
@@ -115,7 +115,7 @@ final class List {
      * The size method returns the value of the size.
      * The purpose of the method is to announce the size of the list
      * to the objects outside the list
-     * 
+     *
      * The method returns an int. Empty list should return 0.
      */
     /**
@@ -127,14 +127,14 @@ final class List {
     public int size() {
         // replace the code below to implement the size method
         return size;
-       
+
     }
 
     /*
      * The remove method does what the name suggests.
      * Removes an int item, specified by the index argument, from the list
      * It also does an additional step.
-     * Think about what happens when 
+     * Think about what happens when
      * an item is removed from the middle of the list
      * It creates a hole in the list, right?
      * This would mean, all the items that are
@@ -158,15 +158,15 @@ final class List {
     public void remove(final int index) {
     	if (index >= 0 && index < size) {
     		for (int i = index; i < size - 1; i++) {
-        	list[i] = list[i+1];
+        	list[i] = list[i + 1];
             }
            list[size] = 0;
            size--;
 
-    	}
+    	
         // write the logic for remove here.
         // Think about what to do to the size variable.
-       else {
+       } else {
        	System.out.println("Invalid position exception");
        }
 }
@@ -207,7 +207,7 @@ final class List {
      * System.out.println(l);
      * This statement is a shortcut for
      * System.out.println(l.toString());
-     * 
+     *
      * So, implement the toString method to display the items
      * in the list in the square brackets notation.
      * i.e., if the list has numbers 1, 2, 3
@@ -231,7 +231,7 @@ final class List {
         	res += list[i] + c;
 
         }
-        res += list[size - 1]+"]";
+        res += list[size - 1] + "]";
         return res;
     }
     /*
@@ -256,7 +256,7 @@ final class List {
     }
 
     /*
-     * Returns the index of the first occurrence 
+     * Returns the index of the first occurrence
      * of the specified element in this list,
      * or -1 if this list does not contain the element.
      */
@@ -270,7 +270,8 @@ final class List {
     public int indexOf(final int item) {
         // Replace the code below
         int index = -1;
-        for (int i:list) { index++;
+        for (int i:list) { 
+         index++;
          if (i == item) {
          	return index;
          }
@@ -323,6 +324,8 @@ final class List {
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
+                break;
+                default:
                 break;
             }
         }
