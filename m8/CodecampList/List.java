@@ -129,8 +129,8 @@ public class List {
      * The method returns void (nothing)
      */
     public void remove(int index) {
-    	if(index >= 0 && index < size) {
-    		for(int i = index; i < size - 1; i++) {
+    	if (index >= 0 && index < size) {
+    		for (int i = index; i < size - 1; i++) {
         	list[i] = list[i+1];
             }
            list[size] = 0;
@@ -157,7 +157,7 @@ public class List {
      */
     public int get(int index) {
         // Replace the code below to write the code for get
-        if(index >= 0 && index<size) {
+        if (index >= 0 && index<size) {
     		return list[index];
     	}
         return -1;
@@ -188,11 +188,11 @@ public class List {
         // Replace the code below
         String res = "[";
         String c = ",";
-        for(int i = 0; i<size-1; i++) {
+        for (int i = 0; i<size-1; i++) {
         	res += list[i] + c;
 
         }
-        res+=list[size-1]+"]";
+        res += list[size-1]+"]";
         return res;
     } 
     
@@ -204,7 +204,7 @@ public class List {
      */
     public boolean contains(int item) {
         // Replace the code below
-        if(indexOf(item) >= 0) {
+        if (indexOf(item) >= 0) {
         	return true;
         }
         return false;
@@ -218,8 +218,8 @@ public class List {
     public int indexOf(int item) {
         // Replace the code below
         int index = -1;
-        for(int i:list) { index++;
-         if(i == item) {
+        for (int i:list) { index++;
+         if (i == item) {
          	return index;
          }
         }
