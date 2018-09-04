@@ -40,7 +40,7 @@ final class List {
     // that's the job of the List constructor
     private int[] list;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int size;
     /**
