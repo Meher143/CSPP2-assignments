@@ -195,12 +195,11 @@ final class List {
      *
      * @return     { description_of_the_return_value }
      */
-    public int get(final int index) {
+    public void get(final int index) {
         // Replace the code below to write the code for get
         if (index >= 0 && index < size) {
-            return list[index];
+            System.out.println(list[index]);
         }
-        return -1;
     }
 
 
@@ -326,7 +325,7 @@ final class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
-                System.out.println(l.get(Integer.parseInt(tokens[1])));
+                l.get(Integer.parseInt(tokens[1]));
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
