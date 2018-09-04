@@ -189,7 +189,7 @@ public class List {
         String res = "[";
         String c = ",";
         for(int i = 0; i<size-1; i++) {
-        	res += list[i];
+        	res += list[i] + c;
 
         }
         res+=list[size-1]+"]";
