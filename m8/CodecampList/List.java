@@ -167,7 +167,6 @@ final class List {
            list[size] = 0;
            size--;
 
-        
         // write the logic for remove here.
         // Think about what to do to the size variable.
        } else {
@@ -274,7 +273,7 @@ final class List {
     public int indexOf(final int item) {
         // Replace the code below
         int index = -1;
-        for (int i:list) { 
+        for (int i:list) {
          index++;
          if (i == item) {
             return index;
