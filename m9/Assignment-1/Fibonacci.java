@@ -18,6 +18,9 @@ import java.util.Scanner;
  */
 
 public class Fibonacci
+/**
+ * { item_description }.
+ */
 {
 
     /*
@@ -30,7 +33,7 @@ public class Fibonacci
 
     public static List fib(int n) {
         // todo - complete this method
-        List l = new List();
+        List l = new List(n);
         int n1 = 0;
         int n2 = 1;
         l.add(n1);
