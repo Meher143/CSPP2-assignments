@@ -50,19 +50,21 @@ public class Fibonacci {
          l.add(sum);
          n1 = n2;
          n2 = sum;
-         /**
+/**
      * { function_description }.
      *
-     * @param      fibanaci  The fibanaci
+     * @param      final  The final
      */
      }
         return l;
     }
 
     public static void main(final String[] args) {
-        /**
-         * { var_description }.
-         */
+       /**
+     * { function_description }.
+     *
+     * @param      final  The final
+     */
         Scanner s = new Scanner(System.in);
         int n = s.nextInt();
         System.out.println(fib(n));
