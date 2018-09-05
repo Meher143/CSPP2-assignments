@@ -22,7 +22,7 @@ import java.util.Scanner;
 
 public class Fibonacci
 /**
- * { To perform fibinacci series calculation }.
+ * { item_description }.
  */
 {
 
@@ -45,9 +45,6 @@ public class Fibonacci
         for(int i = 2; i < n; i++){
          int sum = n1 + n2;
          l.add(sum);
-         /**
-          * { item_description }
-          */
          n1 = n2;
          n2 = sum;
      }
