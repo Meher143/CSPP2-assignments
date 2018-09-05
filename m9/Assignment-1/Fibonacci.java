@@ -34,6 +34,11 @@ public class Fibonacci {
      */
 
     public static List fib(final int n) {
+        /**
+     * { function_description }.
+     *
+     * @param      final  The final
+     */
         // todo - complete this method
         List l = new List(n);
         int n1 = 0;
@@ -45,6 +50,11 @@ public class Fibonacci {
          l.add(sum);
          n1 = n2;
          n2 = sum;
+         /**
+     * { function_description }.
+     *
+     * @param      fibanaci  The fibanaci
+     */
      }
         return l;
     }
