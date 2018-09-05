@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * { item_description }
+ */
 
 /*
  * In the previous module you have created List ADT.
@@ -19,7 +22,7 @@ import java.util.Scanner;
 
 public class Fibonacci
 /**
- * { item_description }.
+ * { To perform fibinacci series calculation }.
  */
 {
 
@@ -32,6 +35,7 @@ public class Fibonacci
      */
 
     public static List fib(int n) {
+    	
         // todo - complete this method
         List l = new List(n);
         int n1 = 0;
@@ -41,6 +45,9 @@ public class Fibonacci
         for(int i = 2; i < n; i++){
          int sum = n1 + n2;
          l.add(sum);
+         /**
+          * { item_description }
+          */
          n1 = n2;
          n2 = sum;
      }
