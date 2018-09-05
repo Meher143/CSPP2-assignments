@@ -20,11 +20,10 @@ import java.util.Scanner;
  *
  */
 
-public class Fibonacci
+public class Fibonacci {
 /**
  * { item_description }.
  */
-{
 
     /*
      * fib is a static method takes a argument n
@@ -35,7 +34,6 @@ public class Fibonacci
      */
 
     public static List fib(final int n) {
-        
         // todo - complete this method
         List l = new List(n);
         int n1 = 0;
@@ -47,7 +45,7 @@ public class Fibonacci
          l.add(sum);
          n1 = n2;
          n2 = sum;
-     }   
+     } 
         return l;
     }
 
