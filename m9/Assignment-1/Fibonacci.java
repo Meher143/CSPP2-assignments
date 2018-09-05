@@ -22,10 +22,13 @@ import java.util.Scanner;
 /**
  * Class for fibonacci.
  */
-public class Fibonacci {
-/**
- * { item_description }.
- */
+public final class Fibonacci {
+    /**
+     * Constructs the object.
+     */
+private Fibonacci() {
+
+}
 
     /*
      * fib is a static method takes a argument n
