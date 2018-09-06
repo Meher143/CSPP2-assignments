@@ -114,12 +114,13 @@ public class List {
      * The method returns void (nothing)
      */
     public void add(int item) {
-        //Inserts the specified element at the end of the zelist.
-        list[size++] = item;   
     }
+        //Inserts the specified element at the end of the zeli
 
     /*
-     *
+     *st.
+        list[size++] = item;   
+    }
      * Resize the list
      * Sometimes the clients of the ADT won't know the expected list capacity
      * To solve this the list has to grow dynamically
