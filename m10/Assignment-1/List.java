@@ -5,7 +5,7 @@ import java.util.Arrays;
  * List of .
  */
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -162,7 +162,7 @@ public class List {
         return size;
     }
     private void resize() {
-    	list = Arrays.copyOf(list, 2*size);
+        list = Arrays.copyOf(list, 2*size);
     }
 
     /*
@@ -279,35 +279,35 @@ public class List {
     {
         // write the logic
         for (int i = 0; i<items.length; i++) {
-        	list[size] = items[i];
-        	size++;
-        	if(size==list.length) {
-        		resize();
-        	}
+            list[size] = items[i];
+            size++;
+            if(size==list.length) {
+                resize();
+            }
         }
     }
 
      /* 
         Inserts the specified element at the specified index 
-	by moving all the elements to the right.
+    by moving all the elements to the right.
         The method returns void (nothing)
      */
     public void add(int index,final int item) {
          // write the logic
-    	if (index < 0) {
-    		System.out.println("Negative Index Exception");
-    	}
-    	if(index > 0) {
-    		for (int i = size; i>index; i--) {
-    			list[i] = list[i-1];
-    		}
-    	    list[index] = item;
-    	    size++;
-    	}
-    	if(index == 0) {
-    		list[index] = item;
-    		size++;
-    	}
+        if (index < 0) {
+            System.out.println("Negative Index Exception");
+        }
+        if(index > 0) {
+            for (int i = size; i>index; i--) {
+                list[i] = list[i-1];
+            }
+            list[index] = item;
+            size++;
+        }
+        if(index == 0) {
+            list[index] = item;
+            size++;
+        }
 
 
     }
@@ -316,17 +316,17 @@ public class List {
     public int count(int item)
     {
          // write the logic
-    	int c = 0;
-    	for (int i = 0; i < size; i++) {
-    		if (list[i] == item) {
-    			c++;
-    		}
-    	}
+        int c = 0;
+        for (int i = 0; i < size; i++) {
+            if (list[i] == item) {
+                c++;
+            }
+        }
         return c;
     }
 
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -390,5 +390,5 @@ public class List {
                 break;
             }
         }
-	}
+    }
 }
