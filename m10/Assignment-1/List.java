@@ -282,17 +282,23 @@ public class List {
         for (int i = 0; i<items.length; i++) {
             list[size] = items[i];
             size++;
-            if(size==list.length) {
+            if(size == list.length) {
                 resize();
             }
         }
     }
 
-     /* 
-        Inserts the specified element at the specified index 
+     /*
+        Inserts the specified element at the specified index
     by moving all the elements to the right.
         The method returns void (nothing)
      */
+        /**
+         * { function_description }.
+         *
+         * @param      index  The index
+         * @param      item   The item
+         */
     public void add(int index,final int item) {
          // write the logic
         if (index < 0) {
@@ -360,7 +366,7 @@ public class List {
                 case "addAll":
                 if (tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
-                int temp [] = new int[t1.length];
+                int temp[] = new int[t1.length];
                 for (int i = 0; i < temp.length; i++) {
                     temp[i] = Integer.parseInt(t1[i]);
                 }
