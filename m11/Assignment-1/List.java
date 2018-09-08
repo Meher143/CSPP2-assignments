@@ -128,7 +128,6 @@ public class List {
         // replace the code below to implement the size method
         return size;
     }
-    
     /*
      * The remove method does what the name suggests. Removes an int item,
      * specified by the index argument, from the list It also does an additional
@@ -292,7 +291,6 @@ public class List {
             for (int i = 0; i < size; i++) {
                 if (list[i] == newArray[j]) {
                     remove(i);
-                   
                 }
             }
         }
