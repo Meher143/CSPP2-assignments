@@ -19,7 +19,13 @@ public int size() {
         return size;
 
     
-
+/**
+ * { function_description }
+ *
+ * @param      item  The item
+ *
+ * @return     { description_of_the_return_value }
+ */
 public boolean contains(final int item) {
         for (int i = 0; i < size; i++) {
             if (list[i] == item) {
@@ -28,6 +34,11 @@ public boolean contains(final int item) {
         }
         return false;
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
 public String toString() {
         if (size == 0) {
             return "[]";
@@ -40,12 +51,29 @@ public String toString() {
         str = str + list[i] + "]";
         return str;
     }
+/**
+ * { function_description }
+ *
+ * @param      item  The item
+ */
 public void add(final int item) {
         Set[size++] = item;
     }
+/**
+ * { function_description }
+ *
+ * @param      item  The item
+ */
 public void add(final int[] item) {
     Set[size++] = item;
 }
+/**
+ * { function_description }
+ *
+ * @param      set   The set
+ *
+ * @return     { description_of_the_return_value }
+ */
 public IntSet intersection(IntSet set) {
     int members = 0;
     for(int i = 0; i < elements.length; i++) {
@@ -64,6 +92,13 @@ public IntSet intersection(IntSet set) {
 
     }
 }
+/**
+ * { function_description }
+ *
+ * @param      newArray  The new array
+ *
+ * @return     { description_of_the_return_value }
+ */
 public Set retainAll(final int[] newArray) {
     Set newArray = newSet();
     for(int i = 0; i < size;i++) {
@@ -76,6 +111,13 @@ public Set retainAll(final int[] newArray) {
     }
 
 }
+/**
+ * { function_description }
+ *
+ * @param      Set   The set
+ *
+ * @return     { description_of_the_return_value }
+ */
 public int[][] cartesianProduct(final int Set) {
     if(size ==0 || set.size == 0) {
         return null;
