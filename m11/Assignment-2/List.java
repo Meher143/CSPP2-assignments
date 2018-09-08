@@ -258,7 +258,6 @@ public class List<E> {
         // write the logic
         for (int j = 0; j < items.length; j++) {
             for (int i = 0; i < size(); i++) {
-                /*if (list[i].equals(items[j])) {*/
                 if (this.get(i).equals(items[j])) {
                     remove(i);
                     i--;
@@ -321,10 +320,5 @@ public class List<E> {
         final int k = 10;
         list = ((E[]) new Object[k]);
         size = 0;
-/*        int[] arr = new int[size];
-        for (int i = 0; i < size; i++) {
-            arr[i] = list[i];
-        }
-        removeAll(arr);*/
     }
 }
