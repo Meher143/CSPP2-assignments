@@ -129,7 +129,6 @@ public class List {
         return size;
     }
     
-
     /*
      * The remove method does what the name suggests. Removes an int item,
      * specified by the index argument, from the list It also does an additional
@@ -159,8 +158,7 @@ public class List {
             }
             list[size - 1] = 0;
             size--;
-        }
-       else {
+        } else {
             System.out.println("Invalid Position Exception");
         }
     }
