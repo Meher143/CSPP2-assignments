@@ -52,7 +52,7 @@ class SortedSet extends Set {
                 count++;
             }
         }
-        return Arrays.copyOf(array,count);
+        return Arrays.copyOf(array, count);
     }
     /**
      * { function_description }.
@@ -61,7 +61,7 @@ class SortedSet extends Set {
      */
     public int last() {
         if (size != 0) {
-            return set[size - 1]; 
+            return set[size - 1];
         }
         System.out.println("Set Empty Exception");
         return -1;
