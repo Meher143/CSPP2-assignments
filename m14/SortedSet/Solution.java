@@ -12,7 +12,15 @@ class SortedSet extends Set {
     SortedSet() {
         
     }
-    public int[] subSet(int fromElement, int toElement) {
+    /**
+     * { function_description }
+     *
+     * @param      fromElement  The from element
+     * @param      toElement    To element
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] subSet(final int fromElement, final int toElement) {
         final int m = 10;
         int[] arr = new int[m];
         if (fromElement > toElement) {
@@ -28,7 +36,14 @@ class SortedSet extends Set {
         }
         return Arrays.copyOf(arr, count);
     }
-    public int[] headSet(int toElement) {
+    /**
+     * { function_description }
+     *
+     * @param      toElement  To element
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] headSet(final int toElement) {
         final int k = 10;
         int[] array = new int[k];
         int count = 0;
@@ -40,6 +55,11 @@ class SortedSet extends Set {
         }
         return Arrays.copyOf(array,count);
     }
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int last() {
         if (size != 0) {
             return set[size - 1];   
@@ -47,11 +67,21 @@ class SortedSet extends Set {
         System.out.println("Set Empty Exception");
         return -1;
     }
+    /**
+     * Adds all.
+     *
+     * @param      array  The array
+     */
     public void addAll(int[] array) {
         for (int i : array) {
             add(i);
         }
     }
+    /**
+     * { function_description }
+     *
+     * @param      element  The element
+     */
     @Override
     public void add(final int element) {
         int index = 0;
