@@ -46,7 +46,7 @@ class SortedSet extends Set {
         final int k = 10;
         int[] array = new int[k];
         int count = 0;
-        for (int i = 0,j = 0; i < size; i++) {
+        for (int i = 0, j = 0; i < size; i++) {
             if (set[i] < toElement) {
                 array[j++] = set[i];
                 count++;
