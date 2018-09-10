@@ -9,11 +9,10 @@ class SortedSet extends Set {
     /**
      * Constructs the object.
      */
-    SortedSet() {
-        
+    SortedSet() {    
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      fromElement  The from element
      * @param      toElement    To element
