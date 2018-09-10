@@ -9,7 +9,7 @@ class SortedSet extends Set {
     /**
      * Constructs the object.
      */
-    SortedSet() {    
+    SortedSet() { 
     }
     /**
      * { function_description }.
@@ -26,7 +26,7 @@ class SortedSet extends Set {
             System.out.println("Invalid Arguments to Subset Exception");
             return null;
         }
-        int count=0;
+        int count = 0;
         for (int i = 0,j = 0; i < size; i++) {
             if (set[i] >= fromElement && set[i] < toElement) {
                 arr[j++]=set[i];
