@@ -36,7 +36,7 @@ class SortedSet extends Set {
         return Arrays.copyOf(arr, count);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      toElement  To element
      *
