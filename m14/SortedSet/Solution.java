@@ -13,7 +13,7 @@ class SortedSet extends Set {
             return null;
         }
         int count=0;
-        for (int i = 0,j=0; i < size; i++) {
+        for (int i = 0,j = 0; i < size; i++) {
             if (set[i] >= fromElement && set[i] < toElement) {
                 arr[j++]=set[i];
                 count++;
@@ -24,9 +24,9 @@ class SortedSet extends Set {
     public int[] headSet(int toElement) {
         int[] array = new int[10];
         int count = 0;
-        for (int i = 0,j=0; i < size; i++) {
+        for (int i = 0,j = 0; i < size; i++) {
             if (set[i] < toElement) {
-                array[j++]=set[i];
+                array[j++] = set[i];
                 count++;
             }
         }
