@@ -55,13 +55,13 @@ class SortedSet extends Set {
         return Arrays.copyOf(array,count);
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
     public int last() {
         if (size != 0) {
-            return set[size - 1];   
+            return set[size - 1]; 
         }
         System.out.println("Set Empty Exception");
         return -1;
@@ -71,13 +71,13 @@ class SortedSet extends Set {
      *
      * @param      array  The array
      */
-    public void addAll(int[] array) {
+    public void addAll(final int[] array) {
         for (int i : array) {
             add(i);
         }
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      element  The element
      */
