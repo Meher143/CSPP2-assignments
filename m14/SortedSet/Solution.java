@@ -85,7 +85,6 @@ class SortedSet extends Set {
     @Override
     public void add(final int element) {
         int index = 0;
- 
         if (!(contains(element))) {
             int i;
             for (i = 0; i < size; i++) {
@@ -185,7 +184,8 @@ public final class Solution {
                 break;
                 case "headSet":
                     System.out.println(Arrays.toString(s.headSet(
-                        Integer.parseInt(tokens[1]))).replace("[", "{").replace("]", "}"));
+                        Integer.parseInt(tokens[1]))).replace(
+                    "[", "{").replace("]", "}"));
                 break;
                 case "last":
                 System.out.println(s.last());
