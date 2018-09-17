@@ -51,13 +51,13 @@ class Question {
             this.penalty = penalty1;
 
     }
-    // /**
-    //  * { function_description }.
-    //  *
-    //  * @param      choice  The choice
-    //  *
-    //  * @return     { description_of_the_return_value }
-    //  */
+    /**
+     * { function_description }.
+     *
+     * @param      choice  The choice
+     *
+     * @return     { description_of_the_return_value }
+     */
     public boolean evaluateResponse(final String choice) {
         return choice.equals(getCorrectAnswer());
     }
@@ -209,11 +209,11 @@ public final class Solution {
     private Solution() {
         // leave this blank
     }
-    // /**
-    //  * main function to execute test cases.
-    //  *
-    //  * @param      args  The arguments
-    //  */
+    /**
+     * main function to execute test cases.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
          // instantiate this Quiz
         Quiz q = new Quiz();
@@ -250,14 +250,14 @@ public final class Solution {
             }
         }
     }
-    // /**
-    //  * Loads questions.
-    //  *
-    //  * @param      scan       The scan
-    //  * @param      quiz       The quiz
-    //  * @param      q          The question count
-    //  *
-    //  */
+    /**
+     * Loads questions.
+     *
+     * @param      scan       The scan
+     * @param      quiz       The quiz
+     * @param      q          The question count
+     *
+     */
     public static void loadQuestions(final Scanner scan,
         final Quiz quiz, final int q) {
         // write your code here to read the questions from the console
@@ -304,13 +304,13 @@ public final class Solution {
             return;
         }
     }
-    // /**
-    //  * Starts a quiz.
-    //  *
-    //  * @param      scan  The scan
-    //  * @param      quiz  The quiz
-    //  * @param      q     The answer count
-    //  */
+    /**
+     * Starts a quiz.
+     *
+     * @param      scan  The scan
+     * @param      quiz  The quiz
+     * @param      q     The answer count
+     */
     public static void startQuiz(final Scanner scan,
         final Quiz quiz, final int q) {
         // write your code here to display the quiz questions on the console.
@@ -335,11 +335,11 @@ public final class Solution {
 
 
     }
-    // /**
-    //  * Displays the score report.
-    //  *
-    //  * @param      quiz     The quiz object
-    //  */
+    /**
+     * Displays the score report.
+     *
+     * @param      quiz     The quiz object
+     */
     public static void displayScore(final Quiz quiz) {
         // write your code here to display the score report using quiz object.
         if (quiz.getQuestion(0) != null) {
@@ -347,4 +347,3 @@ public final class Solution {
     }
     }
 }
-
